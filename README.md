@@ -7,3 +7,7 @@ This is a personal portfolio that will also double as a potential portfolio proj
 ### Technologies
 
 NextJS, TailwindCSS, Typescript
+
+### Additional Libraries
+
+React Icons

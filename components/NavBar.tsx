@@ -1,36 +1,51 @@
+'use client'
+
 import Link from 'next/link';
-import React from 'react';
+import { useState } from 'react';
+import { TfiClose } from 'react-icons/tfi';
+import { SlMenu } from "react-icons/sl";
+
 
 type Props = {}
 
 export default function NavBar({}: Props) {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className='font-alegreya bg-burgundy min-w-full text-cream px-4 md:px-8 py-2 md:py-4 flex items-center justify-between'>
-      <h2 className='font-offside text-lg md:text-2xl'>Ashley Morgan</h2>
-      <nav className='text-md md:text-lg'>
-        <ul className='flex items-center gap-x-10'>
+    <header className='font-alegreya bg-burgundy min-w-full text-cream px-4 md:px-8 py-2 md:py-4 flex flex-col md:flex-row gap-y-4 md:items-center md:justify-between fixed w-full z-20 top-0 left-0'>
+      <div className='flex justify-between items-center space-x-2'>
+        {/*TODO: Add Logo */}
+        <h2 className='font-offside text-2xl hidden md:block'>Ashley Morgan</h2>
+      </div>
+      <button className='block md:hidden' onClick={() => setIsOpen(!isOpen)}>
+        <span className="sr-only">Open main menu</span>
+        <SlMenu />
+      </button>
+      <nav className={`w-full block md:flex md:w-auto ${isOpen ? "block" : "hidden"}`}>
+        <ul className='text-md md:text-lg md:flex md:flex-row md:gap-x-10 gap-y-5 md:items-center'>
           <li>
-            <Link href='' className='hover:bg-cream hover:text-burgundy py-2 px-4 rounded'>
+            <Link href='' className='navLink'>
               Home
             </Link>
           </li>
           <li>
-            <Link href='' className='hover:bg-cream hover:text-burgundy py-2 px-4 rounded'>
+            <Link href='' className='navLink'>
               Projects
             </Link>
           </li>
           <li>
-            <Link href='' className='hover:bg-cream hover:text-burgundy py-2 px-4 rounded'>
+            <Link href='' className='navLink'>
               About Me/Skills
             </Link>
           </li>
           <li>
-            <Link href='' className='hover:bg-cream hover:text-burgundy py-2 px-4 rounded'>
+            <Link href='' className='navLink'>
               Contact
             </Link>
           </li>
           <li>
-            <Link href='https://ashleys-accessibility.hashnode.dev/' className='hover:bg-cream hover:text-burgundy py-2 px-4 rounded'>
+            <Link href='https://ashleys-accessibility.hashnode.dev/' className='navLink'>
               Blog
             </Link>
           </li>

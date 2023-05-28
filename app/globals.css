@@ -11,3 +11,9 @@
   font-family: "Offside";
   src: url('../public/fonts/Offside-Regular.ttf');
 }
+
+@layer components {
+  .navLink {
+    @apply hover:bg-cream hover:text-burgundy py-1 px-2 md:py-2 md:px-4 rounded;
+  }
+}
