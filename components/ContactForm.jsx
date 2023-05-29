@@ -93,7 +93,7 @@ export default function ContactForm() {
           value={inputs.message}
           className='text-dark-grey px-1'
         />
-        <button type="submit" disabled={status.submitting} className='px-2 py-1 bg-cream text-burgundy max-w-max rounded-sm'>
+        <button type="submit" disabled={status.submitting} className='px-2 py-1 bg-cream text-burgundy max-w-max rounded-sm text-lg md:text-xl'>
           {!status.submitting
             ? !status.submitted
               ? 'Submit'
