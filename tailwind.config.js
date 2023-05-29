@@ -12,6 +12,7 @@ module.exports = {
     colors: {
       'burgundy': '#62004b',
       'cream': '#f4e4c8',
+      'dark-grey': '#030712'
     },
     fontFamily: {
       'alegreya': ['Alegreya', 'Tahoma', 'Verdana', 'sans-serif'],

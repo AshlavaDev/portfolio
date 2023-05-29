@@ -17,18 +17,18 @@ export default function Intro({}: Props) {
           className='rounded-full'
         />
       </div>
-      <h1 className='font-offside md:text-6xl text-4xl py-4 md:py-6'>Ashley Morgan</h1>
+      <h1 className='font-offside md:text-6xl text-4xl py-4 md:py-6 text-dark-grey'>Ashley Morgan</h1>
       <div className='flex flex-col md:flex-row gap-y-5 items-center justify-between gap-x-6 text-2xl md:text-4xl text-burgundy'>
         <div className='flex flex-col items-center gap-y-4'>
           <h3 className='text-4xl md:text-6xl'>Web Developer</h3>
           <div className='flex gap-x-4'>
             <Link href='https://github.com/AshlavaDev' legacyBehavior>
-              <a target='_blank' rel="noopener noreferrer">
+              <a target='_blank' rel="noopener noreferrer" className='p-1 rounded hover:bg-burgundy hover:text-cream'>
                 <SiGithub />
               </a>
             </Link>
             <Link href='https://www.linkedin.com/in/ashley-morgan-wbdv/' legacyBehavior>
-              <a target='_blank' rel="noopener noreferrer">
+              <a target='_blank' rel="noopener noreferrer" className='p-1 rounded hover:bg-burgundy hover:text-cream'>
                 <SiLinkedin />
               </a>
             </Link>

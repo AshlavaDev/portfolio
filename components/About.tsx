@@ -17,7 +17,7 @@ export default function About({}: Props) {
         <p className='text-lg md:text-2xl'>I am nonbinary, using they/them pronouns, am queer and autistic. This might be part of why I focus so much on accessibility, but my ADHD also means I like learning about almost anything, which is why I also like fullstack work.</p>
       </div>
       <div className='pt-20 px-6 flex flex-col items-center max-w-prose pb-4'>
-        <h2 className='font-offside text-4xl md:text-6xl pb-2'>Skills</h2>
+        <h2 className='font-offside text-4xl md:text-6xl pb-2 text-dark-grey'>Skills</h2>
         <div className='flex flex-col gap-10'>
           <div>
             <h4 className='text-2xl md:text-4xl text-burgundy'>Frontend</h4>

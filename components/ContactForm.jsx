@@ -71,6 +71,7 @@ export default function ContactForm() {
           onChange={handleOnChange}
           required
           value={inputs.name}
+          className='text-dark-grey px-1'
         />
         <label htmlFor="email">Email</label>
         <input
@@ -80,14 +81,17 @@ export default function ContactForm() {
           onChange={handleOnChange}
           required
           value={inputs.email}
+          className='text-dark-grey px-1'
         />
         <label htmlFor="message">Message</label>
         <textarea
+          rows="6"
           id="message"
           name="message"
           onChange={handleOnChange}
           required
           value={inputs.message}
+          className='text-dark-grey px-1'
         />
         <button type="submit" disabled={status.submitting} className='px-2 py-1 bg-cream text-burgundy max-w-max rounded-sm'>
           {!status.submitting
