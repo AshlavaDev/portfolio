@@ -61,9 +61,9 @@ export default function ContactForm() {
       });
   };
   return (
-    <div className='max-w-prose w-2/3'>
-      <form onSubmit={handleOnSubmit} className='flex flex-col gap-y-4 p-2 md:text-lg'>
-        <label htmlFor='name'>Name</label>
+    <div className='max-w-prose w-full'>
+      <form onSubmit={handleOnSubmit} className='flex flex-col p-2 md:text-lg'>
+        <label htmlFor='name' className='pt-4 pb-1'>Name</label>
         <input
           id='name'
           type='text'
@@ -73,7 +73,7 @@ export default function ContactForm() {
           value={inputs.name}
           className='text-dark-grey px-1'
         />
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email" className='pt-4 pb-1'>Email</label>
         <input
           id="email"
           type="email"
@@ -83,7 +83,7 @@ export default function ContactForm() {
           value={inputs.email}
           className='text-dark-grey px-1'
         />
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message" className='pt-4 pb-1'>Message</label>
         <textarea
           rows="6"
           id="message"
@@ -93,7 +93,7 @@ export default function ContactForm() {
           value={inputs.message}
           className='text-dark-grey px-1'
         />
-        <button type="submit" disabled={status.submitting} className='px-2 py-1 bg-cream text-burgundy max-w-max rounded-sm text-lg md:text-xl'>
+        <button type="submit" disabled={status.submitting} className='px-2 py-1 mt-4 bg-cream text-burgundy max-w-max rounded-sm text-lg md:text-xl'>
           {!status.submitting
             ? !status.submitted
               ? 'Submit'
