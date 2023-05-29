@@ -10,4 +10,4 @@ NextJS, TailwindCSS, Typescript
 
 ### Additional Libraries
 
-React Icons
+React Icons, Formspree

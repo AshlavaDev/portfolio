@@ -22,11 +22,15 @@ export default function Intro({}: Props) {
         <div className='flex flex-col items-center gap-y-4'>
           <h3 className='text-4xl md:text-6xl'>Web Developer</h3>
           <div className='flex gap-x-4'>
-            <Link href='https://github.com/AshlavaDev'>
-              <SiGithub />
+            <Link href='https://github.com/AshlavaDev' legacyBehavior>
+              <a target='_blank' rel="noopener noreferrer">
+                <SiGithub />
+              </a>
             </Link>
-            <Link href='https://www.linkedin.com/in/ashley-morgan-wbdv/'>
-              <SiLinkedin />
+            <Link href='https://www.linkedin.com/in/ashley-morgan-wbdv/' legacyBehavior>
+              <a target='_blank' rel="noopener noreferrer">
+                <SiLinkedin />
+              </a>
             </Link>
           </div>
         </div>
