@@ -8,4 +8,4 @@ export default function Projects({}: Props) {
       <h2 className='text-burgundy font-offside text-4xl md:text-8xl px-10'>Projects</h2>
     </section>
   )
-}
+};

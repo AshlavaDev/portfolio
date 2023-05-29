@@ -35,12 +35,12 @@ export default function NavBar({}: Props) {
             </Link>
           </li>
           <li>
-            <Link href='' className='navLink'>
+            <Link href='#about' className='navLink'>
               About Me/Skills
             </Link>
           </li>
           <li>
-            <Link href='' className='navLink'>
+            <Link href='#contact' className='navLink'>
               Contact
             </Link>
           </li>
