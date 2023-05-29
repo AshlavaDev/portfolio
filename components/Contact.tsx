@@ -16,8 +16,10 @@ export default function Contact({}: Props) {
           <p>Connect Via LinkedIn:</p>
           <Link href='https://www.linkedin.com/in/ashley-morgan-wbdv/' legacyBehavior>
             <a target='_blank' rel="noopener noreferrer" className='flex gap-2 items-center'>
-              <span className='hover:bg-cream hover:text-burgundy hover:px-1 hover:rounded-sm hidden md:block'>https://www.linkedin.com/in/ashley-morgan-wbdv/</span>
-              <SiLinkedin />
+              <span className='hover:bg-cream hover:text-burgundy px-1 hover:rounded-sm hidden md:block'>https://www.linkedin.com/in/ashley-morgan-wbdv/</span>
+              <span className='p-1 rounded hover:bg-cream hover:text-burgundy'>
+                <SiLinkedin />
+              </span>
             </a>
           </Link>
         </span>
