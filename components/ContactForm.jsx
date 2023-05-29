@@ -93,7 +93,7 @@ export default function ContactForm() {
           value={inputs.message}
           className='text-dark-grey px-1'
         />
-        <button type="submit" disabled={status.submitting} className='px-2 py-1 mt-4 bg-cream text-burgundy max-w-max rounded-sm text-lg md:text-xl'>
+        <button type="submit" disabled={status.submitting} className='px-2 py-1 mt-4 mb-2 bg-cream text-burgundy hover:text-cream hover:bg-burgundy hover:border hover:border-cream max-w-max rounded-sm text-lg md:text-xl'>
           {!status.submitting
             ? !status.submitted
               ? 'Submit'
@@ -102,9 +102,9 @@ export default function ContactForm() {
         </button>
       </form>
       {status.info.error && (
-        <div className="error">Error: {status.info.msg}</div>
+        <div className="error text-lg md:text-xl mb-12">Error: {status.info.msg}</div>
       )}
-      {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+      {!status.info.error && status.info.msg && <p className='text-lg md:text-xl mb-12'>{status.info.msg}</p>}
     </div>
   );
 };
