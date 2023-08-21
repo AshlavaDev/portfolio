@@ -3,8 +3,8 @@ import Skill from './Skill';
 
 type Props = {}
 
-const frontendSkills: string[] = ['HTML', 'CSS', 'TailwindCSS', 'Javascript', 'React', 'NextJS', 'Vue', 'Nuxt', 'Bootstrap'];
-const backendSkills: string[] = ['Node', 'Express', 'SQL', 'Postgres', 'MongoDB', 'Firebase', 'Superbase'];
+const frontendSkills: string[] = ['HTML', 'CSS', 'TailwindCSS', 'Javascript', 'React', 'NextJS', 'Svelte', 'Bootstrap'];
+const backendSkills: string[] = ['Node', 'Express', 'SQL', 'Postgres', 'MongoDB', 'Mongoose', 'Superbase'];
 const otherSkills: string[] = ['Git', 'GitHub', 'Figma', 'UX/UI', 'Writing', 'Communication', 'Research'];
 
 export default function About({}: Props) {
