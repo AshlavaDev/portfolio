@@ -1,5 +1,6 @@
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
+import NavBar from "@/components/NavBar";
 
 export const metadata = {
   title: 'Ashley Morgan',
@@ -16,7 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='font-alegrya'>
+      <body className='font-alegreya  bg-cream'>
+        <NavBar />
         {children}
         <Analytics />
       </body>

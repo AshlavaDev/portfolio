@@ -16,4 +16,8 @@
   .navLink {
     @apply hover:bg-cream hover:text-burgundy py-1 px-2 md:py-2 md:px-4 rounded;
   }
+
+  .backButton {
+    @apply py-1 px-2 rounded max-w-fit border-2 border-solid border-burgundy text-cream bg-burgundy hover:bg-cream hover:text-burgundy;
+  }
 }
