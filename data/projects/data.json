@@ -25,7 +25,7 @@
       },
       {
         "name": "third-image",
-        "src": "/images/project_images/svelte_todo/svelte-app-mobile-populated.png",
+        "src": "/images/project_images/svelte_todo/svelte-app-mobile.png",
         "alt": "A todo app with 4 items present on mobile screen"
       }
     ]

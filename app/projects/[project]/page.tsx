@@ -20,7 +20,7 @@ export default function ProjectPage ({}: Props ) {
     <>
     { projectData ? (
       <section className='pt-20 px-4 md:px-10 flex flex-col md:flex-row md:justify-center items-center md:items-start md:min-h-screen text-burgundy text-lg md:text-xl'>
-        <div className='md:flex-1 flex flex-col items-center md:grid md:grid-cols-2 place-items-center gap-4 order-last md:order-first'>
+        <div className='md:flex-1 flex flex-col items-center md:grid md:grid-cols-2 place-items-center gap-4 order-last md:order-first pb-4 md:pb-0'>
           {projectData.images.map((image, index) => (
             <div className='relative h-auto aspect-w-1 aspect-h-1 flex justify-center' key={index}>
               <Image src={image.src} alt={image.alt} width="0" height="0" sizes="100vw" className='w-4/5 h-auto'/>
