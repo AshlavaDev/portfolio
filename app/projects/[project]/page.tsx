@@ -1,6 +1,3 @@
-'use client'
-
-import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TfiArrowLeft } from 'react-icons/tfi';
@@ -11,8 +8,7 @@ type Props = {
 }
 
 export default function ProjectPage ({}: Props ) {
-  const router = useSearchParams();
-  const project = router.get('project');
+
 
   const projectData = data.find((project) => project === project);
 
