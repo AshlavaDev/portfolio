@@ -10,5 +10,12 @@ type Project = {
   "projectLinks": {
     "deployed": string,
     "github": string
-  }
+  },
+  "images": [
+    {
+      "name": string,
+      "src": string,
+      "alt": string
+    }
+  ]
 }

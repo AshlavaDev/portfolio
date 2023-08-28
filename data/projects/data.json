@@ -11,6 +11,23 @@
     "projectLinks": {
       "deployed": "https://ashley-svelte-todo.netlify.app/",
       "github": "https://github.com/AshlavaDev/sveltekit-todo-app"
-    }
+    },
+    "images": [
+      {
+        "name": "main-image",
+        "src": "/images/project_images/svelte_todo/svelte-app-desktop-populated.png",
+        "alt": "A todo app with 4 items present"
+      },
+      {
+        "name": "second-image",
+        "src": "/images/project_images/svelte_todo/svelte-app-desktop-empty.png",
+        "alt": "A todo app with no items present"
+      },
+      {
+        "name": "third-image",
+        "src": "/images/project_images/svelte_todo/svelte-app-mobile-populated.png",
+        "alt": "A todo app with 4 items present on mobile screen"
+      }
+    ]
   }
 ]

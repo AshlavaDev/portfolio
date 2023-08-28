@@ -16,20 +16,18 @@ export default function ProjectPage ({}: Props ) {
 
   const projectData = data.find((project) => project === project);
 
-  console.log(projectData);
-
-
   return (
-    
-    <section className='pt-20 px-4 md:px-10 flex flex-col md:flex-row md:justify-center items-center md:items-baseline min-h-screen text-burgundy text-lg md:text-xl'>
-      { projectData ? (
-      <>
-        <div className='md:flex-1 md:grid md:grid-cols-2'>
-          <Image src='' alt=''></Image>
-          <Image src='' alt=''></Image>
-          <Image src='' alt=''></Image>
+    <>
+    { projectData ? (
+      <section className='pt-20 px-4 md:px-10 flex flex-col md:flex-row md:justify-center items-center md:items-start md:min-h-screen text-burgundy text-lg md:text-xl'>
+        <div className='md:flex-1 flex flex-col items-center md:grid md:grid-cols-2 place-items-center gap-4'>
+          {projectData.images.map((image, index) => (
+            <div className='relative h-auto aspect-w-1 aspect-h-1 flex justify-center' key={index}>
+              <Image src={image.src} alt={image.alt} width="0" height="0" sizes="100vw" className='w-4/5 h-auto'/>
+            </div>
+          ))}
         </div>
-        <div className='md:flex-1 flex flex-col gap-4'>
+        <div className='md:flex-1 flex flex-col gap-4 pb-4'>
           <Link href='/#projects' className='backButton flex items-center gap-2'><TfiArrowLeft /> Back</Link>
           <h1 className='text-4xl md:text-6xl font-offside'>{projectData.projectName}</h1>
           <p className='text-2xl md:text-2xl'>{projectData.briefDescription}</p>
@@ -44,13 +42,13 @@ export default function ProjectPage ({}: Props ) {
             <li><a href={projectData.projectLinks.github} target='_blank' className='backButton'>Github Repo</a></li>
           </ul>
         </div>
-      </>
-       ) : (
-        <div className='flex flex-col items-center gap-4'>
-          <h1 className='text-4xl md:text-6xl font-offside'>Project Not Found</h1>
-          <Link href='/#projects' className='backButton flex items-center gap-2'><TfiArrowLeft /> Back</Link>
-        </div>
-       )}
-    </section>
+      </section>
+    ) : (
+      <div className='flex flex-col items-center gap-4'>
+        <h1 className='text-4xl md:text-6xl font-offside'>Project Not Found</h1>
+        <Link href='/#projects' className='backButton flex items-center gap-2'><TfiArrowLeft /> Back</Link>
+      </div>
+    )}
+    </>
   )
 }
