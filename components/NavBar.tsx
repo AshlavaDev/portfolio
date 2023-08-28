@@ -14,11 +14,10 @@ export default function NavBar({}: Props) {
 
   return (
     <header className='bg-burgundy min-w-full text-cream px-4 md:px-8 py-2 md:py-4 flex flex-col justify-center md:flex-row gap-y-4 md:items-center md:justify-between fixed w-full z-20 top-0 left-0'>
-      <div className='flex justify-between items-center space-x-2'>
-        {/*TODO: Add Logo */}
-        <h2 className='font-offside text-2xl hidden md:block'>Ashley Morgan</h2>
-      </div>
-      <button className='block md:hidden ' onClick={() => setIsOpen(!isOpen)}>
+
+      <h2 className='font-offside text-2xl hidden md:block'>Ashley Morgan</h2>
+      
+      <button className='block md:hidden justify-self-center max-w-fit' onClick={() => setIsOpen(!isOpen)}>
         <span className="sr-only">Open main menu</span>
         <SlMenu />
       </button>
