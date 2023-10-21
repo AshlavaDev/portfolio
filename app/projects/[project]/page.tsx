@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { TfiArrowLeft } from 'react-icons/tfi';
-import data from '../../../data/projects/data.json';
 
-type Props = {
-  
-}
+import data from '@/data/projects/data.json';
 
-export default function ProjectPage ({}: Props ) {
+export default function ProjectPage({ params }: { params: { project: string } }) {
 
+  function getProjectData() {
+    return data.find((project) => project.project === params.project);
+  }
 
-  const projectData = data.find((project) => project === project);
+  const projectData = getProjectData();
 
   return (
     <>
@@ -40,7 +40,7 @@ export default function ProjectPage ({}: Props ) {
         </div>
       </section>
     ) : (
-      <div className='flex flex-col items-center gap-4'>
+      <div className='flex flex-col items-center gap-4 pt-12 md:pt-24'>
         <h1 className='text-4xl md:text-6xl font-offside'>Project Not Found</h1>
         <Link href='/#projects' className='backButton flex items-center gap-2'><TfiArrowLeft /> Back</Link>
       </div>

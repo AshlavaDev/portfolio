@@ -2,13 +2,9 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { TfiClose } from 'react-icons/tfi';
 import { SlMenu } from "react-icons/sl";
 
-
-type Props = {}
-
-export default function NavBar({}: Props) {
+export default function NavBar() {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +17,7 @@ export default function NavBar({}: Props) {
         <span className="sr-only">Open main menu</span>
         <SlMenu />
       </button>
-      <nav className={`w-full block md:flex md:w-auto ${isOpen ? "block" : "hidden"}`}>
+      <nav className={`w-full md:flex md:w-auto ${isOpen ? "block" : "hidden"}`}>
         <ul className='text-md md:text-lg md:flex md:flex-row md:gap-x-10 gap-y-5 md:items-center'>
           <li>
             <Link href='#intro' className='navLink'>
