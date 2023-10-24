@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './Footer';
 import ContactForm from './ContactForm';
 import { SiLinkedin } from 'react-icons/si';
 import Link from 'next/link';
@@ -30,8 +29,6 @@ export default function Contact({}: Props) {
           <ContactForm />
         </div>
       </div>
-
-      <Footer />
     </section>
   )
 };
