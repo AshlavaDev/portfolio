@@ -27,7 +27,7 @@ export default function Intro({}: Props) {
                 <SiGithub />
               </a>
             </Link>
-            <Link href='https://www.linkedin.com/in/ashley-morgan-wbdv/' legacyBehavior>
+            <Link href='https://www.linkedin.com/in/ashleymorganwbdv/' legacyBehavior>
               <a target='_blank' rel="noopener noreferrer" className='p-1 rounded hover:bg-burgundy hover:text-cream'>
                 <SiLinkedin />
               </a>
