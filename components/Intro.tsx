@@ -10,7 +10,7 @@ export default function Intro({}: Props) {
     <section id='intro' className='flex flex-col justify-center items-center min-h-screen'>
       <div className="h-64 w-64 relative bg-burgundy rounded-full">
         <Image
-          src='/images/profile1.png'
+          src='/images/profile1.webp'
           alt='A picture of a non-binary person, Ashley Morgan, smiling'
           fill
           objectFit='cover'

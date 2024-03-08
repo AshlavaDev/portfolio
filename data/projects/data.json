@@ -7,25 +7,25 @@
     "projectDescription":
       "This CRUD app was built using Svelte, initially following a simple front-end Svelte tutorial before expansion into a full-stack application. The user enters a task in the input section, with a limit of 40 characters to aid in a uniform design, especially for mobile responsiveness. On pressing the add button, the task is sent to the back end MongoDB where it is stored until the task is deleted, and the task is rendered on the app instantly (at least according to connection times to the database) using Svelte./n/nFrom there, more tasks can be added and existing ones can be edited. Two checkboxes allow for the marking of completed tasks and important tasks. On checking the boxes, the lists are updated in real-time with the completed column rendering completed tasks, and important tasks being sorted to the top of their respective lists with a different styling to highlight them. Deletion of items is instantaneous.",
     "projectLimitations": 
-      "Only one list exists across all instances, meaning that anyone using the app will be accessing the same list as everyone else. Any changes someone make to the list is present to all users. This is more to do with the fact the project is designed to showcase CRUD actions and real-time rendering.",
+      "Only one list exists across all instances, meaning that anyone using the app will be accessing the same list as everyone else. Any changes someone make to the list is present to all users. This is more to do with the fact the project is designed to showcase CRUD actions and real-time rendering. Currently, after months of working, the backend also stopped working and debugging is in progress. Therefore deployed link is down for this project.",
     "projectLinks": {
-      "deployed": "https://ashley-svelte-todo.netlify.app/",
+      "deployed": "#",
       "github": "https://github.com/AshlavaDev/sveltekit-todo-app"
     },
     "images": [
       {
         "name": "main-image",
-        "src": "/images/project_images/svelte_todo/svelte-app-desktop-populated.png",
+        "src": "/images/project_images/svelte_todo/svelte-app-desktop-populated.webp",
         "alt": "A todo app with 4 items present"
       },
       {
         "name": "second-image",
-        "src": "/images/project_images/svelte_todo/svelte-app-desktop-empty.png",
+        "src": "/images/project_images/svelte_todo/svelte-app-desktop-empty.webp",
         "alt": "A todo app with no items present"
       },
       {
         "name": "third-image",
-        "src": "/images/project_images/svelte_todo/svelte-app-mobile.png",
+        "src": "/images/project_images/svelte_todo/svelte-app-mobile.webp",
         "alt": "A todo app with 4 items present on mobile screen"
       }
     ]
@@ -45,22 +45,22 @@
     "images": [
       {
         "name": "main-image",
-        "src": "/images/project_images/kyber_corp/desktop_home.png",
+        "src": "/images/project_images/kyber_corp/desktop_home.webp",
         "alt": "The desktop homepage of Kyber Corp"
       },
       {
         "name": "second-image",
-        "src": "/images/project_images/kyber_corp/mobile_home.png",
+        "src": "/images/project_images/kyber_corp/mobile_home.webp",
         "alt": "The mobile homepage of Kyber Corp"
       },
       {
         "name": "third-image",
-        "src": "/images/project_images/kyber_corp/desktop_contact.png",
+        "src": "/images/project_images/kyber_corp/desktop_contact.webp",
         "alt": "Part of the desktop contact page with form"
       },
       {
         "name": "fourth-image",
-        "src": "/images/project_images/kyber_corp/desktop_service_modal.png",
+        "src": "/images/project_images/kyber_corp/desktop_service_modal.webp",
         "alt": "Desktop services page with information modal open"
       }
     ]
@@ -81,32 +81,32 @@
     "images": [
       {
         "name": "main-image",
-        "src": "/images/project_images/next_blog/desktop-light-homepage.png",
+        "src": "/images/project_images/next_blog/desktop-light-homepage.webp",
         "alt": "The light mode dektop version of the home page of a blogging site"
       },
       {
         "name": "second-image",
-        "src": "/images/project_images/next_blog/desktop-dark-homepage.png",
+        "src": "/images/project_images/next_blog/desktop-dark-homepage.webp",
         "alt": "The dark mode dektop version of the home page of a blogging site"
       },
       {
         "name": "third-image",
-        "src": "/images/project_images/next_blog/mobile-dark-login.png",
+        "src": "/images/project_images/next_blog/mobile-dark-login.webp",
         "alt": "The dark mode mobile version of a login page"
       },
       {
         "name": "fourth-image",
-        "src": "/images/project_images/next_blog/desktop-light-profile.png",
+        "src": "/images/project_images/next_blog/desktop-light-profile.webp",
         "alt": "The light mode desktop version of a blog site profile page"
       },
       {
         "name": "fifth-image",
-        "src": "/images/project_images/next_blog/desktop-dark-create.png",
+        "src": "/images/project_images/next_blog/desktop-dark-create.webp",
         "alt": "The dark mode desktop version of a blog site create post page"
       },
       {
         "name": "sixth-image",
-        "src": "/images/project_images/next_blog/mobile-dark-updateblog.png",
+        "src": "/images/project_images/next_blog/mobile-dark-updateblog.webp",
         "alt": "The dark mode mobile version of a blog site update post function"
       }
     ]
