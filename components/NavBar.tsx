@@ -39,11 +39,6 @@ export default function NavBar() {
               Contact
             </Link>
           </li>
-          <li>
-            <Link href='https://ashleys-accessibility.hashnode.dev/' className='navLink'>
-              Blog
-            </Link>
-          </li>
         </ul>
       </nav>
     </header>
