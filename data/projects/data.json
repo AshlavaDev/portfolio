@@ -47,33 +47,43 @@
 
   },
   {
-    "project": "svelte-todo",
-    "projectName": "Svelte Full-stack Todo App",
-    "briefDescription": "A simple todo app that stores tasks in a backend database",
-    "keywords": "Full-stack, Svelte, Pico.css, Axios, MongoDB, Mongoose",
+    "project": "the-paint-atheneum",
+    "projectName": "The Paint Atheneum",
+    "briefDescription": "A repository of paints used for painting miniatures",
+    "keywords": "SvelteKit, TailwindCSS, Postgres, TypeScript, Supabase",
     "projectDescription":
-      "This CRUD app was built using Svelte, initially following a simple front-end Svelte tutorial before expansion into a full-stack application. The user enters a task in the input section, with a limit of 40 characters to aid in a uniform design, especially for mobile responsiveness. On pressing the add button, the task is sent to the back end MongoDB where it is stored until the task is deleted, and the task is rendered on the app instantly (at least according to connection times to the database) using Svelte./n/nFrom there, more tasks can be added and existing ones can be edited. Two checkboxes allow for the marking of completed tasks and important tasks. On checking the boxes, the lists are updated in real-time with the completed column rendering completed tasks, and important tasks being sorted to the top of their respective lists with a different styling to highlight them. Deletion of items is instantaneous.",
+      "This website is a miniature paint library (hence the name Athenuem, an ancient word for library). It is designed to eventually have all paints created for use in miniature gaming, of which there are way more than you would think Currently the site only has the paints of 2 companies and that is already several hundred. And finding them is manual work for me. The database, built with Postgres using Supabase, is created from a lot of information I collected including the paint name, company, range, colour category, paint type, and a hex code for the colour if I can get it. Eventually I want the ability to search these colours properly, as opposed to by certain criteria, and to have similar colours pop up so people can compare ranges. This was originally a React project built as my final project in web dev school, and then rebuilt using SvelteKit with a few more features added to it such as pagination.",
     "projectLimitations": 
-      "Only one list exists across all instances, meaning that anyone using the app will be accessing the same list as everyone else. Any changes someone make to the list is present to all users. This is more to do with the fact the project is designed to showcase CRUD actions and real-time rendering. Currently, after months of working, the backend also stopped working and debugging is in progress. Therefore deployed link is down for this project.",
+      "The three biggest limitations currently are that the website does not seem to want to be hosted anywhere, there is no search bar type functionality yet, and the comparison between paint ranges does not exist on either the frontend or the database.",
     "projectLinks": {
-      "deployed": "#",
-      "github": "https://github.com/AshlavaDev/sveltekit-todo-app"
+      "deployed": "",
+      "github": "https://github.com/AshlavaDev/the-paint-atheneum"
     },
     "images": [
       {
         "name": "main-image",
-        "src": "/images/project_images/svelte_todo/svelte-app-desktop-populated.webp",
-        "alt": "A todo app with 4 items present"
+        "src": "/images/project_images/the-paint-atheneum/the-paint-atheneum-homepage-desktop.webp",
+        "alt": "The homepage for desktop of The Paint Atheneum"
       },
       {
         "name": "second-image",
-        "src": "/images/project_images/svelte_todo/svelte-app-desktop-empty.webp",
-        "alt": "A todo app with no items present"
+        "src": "/images/project_images/the-paint-atheneum/the-paint-atheneum-colour-selector-desktop.webp",
+        "alt": "The desktop paint colour selector for The Paint Atheneum with green selected"
       },
       {
         "name": "third-image",
-        "src": "/images/project_images/svelte_todo/svelte-app-mobile.webp",
-        "alt": "A todo app with 4 items present on mobile screen"
+        "src": "/images/project_images/the-paint-atheneum/the-paint-atheneum-colour-selector-mobile.webp",
+        "alt": "The mobile paint colour selector for The Paint Atheneum with green selected"
+      },
+      {
+        "name": "fourth-image",
+        "src": "/images/project_images/the-paint-atheneum/the-paint-atheneum-news-desktop.webp",
+        "alt": "The desktop news section of The Paint Atheneum"
+      },
+      {
+        "name": "fifth-image",
+        "src": "/images/project_images/the-paint-atheneum/the-paint-atheneum-company-selector-desktop.webp",
+        "alt": "The desktop company selector section of The Paint Atheneum"
       }
     ]
   },
