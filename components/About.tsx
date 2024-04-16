@@ -3,7 +3,7 @@ import Skill from './Skill';
 
 type Props = {}
 
-const frontendSkills: string[] = ['HTML', 'CSS', 'TailwindCSS', 'Javascript', 'React', 'NextJS', 'Svelte', 'Bootstrap'];
+const frontendSkills: string[] = ['HTML', 'CSS', 'TailwindCSS', 'Javascript', 'React', 'NextJS', 'SvelteKit', 'Bootstrap'];
 const backendSkills: string[] = ['Node', 'Express', 'SQL', 'Postgres', 'MongoDB', 'Mongoose', 'Superbase'];
 const otherSkills: string[] = ['Git', 'GitHub', 'Figma', 'UX/UI', 'Writing', 'Communication', 'Research'];
 

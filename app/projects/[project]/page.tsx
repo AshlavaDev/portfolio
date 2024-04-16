@@ -34,7 +34,9 @@ export default function ProjectPage({ params }: { params: { project: string } })
           <p className='md:text-lg'>{projectData.projectLimitations}</p>
           <p className='text-2xl md:text-2xl'>Links</p>
           <ul className='flex flex-col gap-2'>
+            {projectData.projectLinks.deployed &&
             <li><a href={projectData.projectLinks.deployed} target='_blank' className='backButton'>Deployed Project</a> </li>
+            }
             <li><a href={projectData.projectLinks.github} target='_blank' className='backButton'>Github Repo</a></li>
           </ul>
         </div>
